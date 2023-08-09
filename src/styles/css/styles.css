@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 html,
 body,
 div,
@@ -131,6 +133,72 @@ table {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 77%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 89%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 87%;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+@media (max-width: 768px) {
+  .header .header {
+    padding: 2rem 0;
+  }
+}
+.header .logo-container img {
+  max-height: 27px;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 2.625rem;
+}
+.header .nav .hamburguer {
+  display: none;
+}
+.header .nav .nav-links {
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+}
+.header .nav .nav-links::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 2px;
+  transition: width 0.5s;
+}
+.header .nav .nav-links:hover::after {
+  content: "";
+  background-color: rgb(241, 243, 245);
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header .nav .hamburguer {
+    display: block;
+  }
+  .header .nav .nav-links {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
