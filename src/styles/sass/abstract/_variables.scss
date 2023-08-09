@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 // Colors
 
-// Primary colors:
+// primary colors:
 $peach: rgb(231, 129, 107);
 $black: rgb(29, 28, 30);
 $white: rgb(255, 255, 255);
 
-// Secondary colors:
+// secondary colors:
 $light-peach: rgb(255, 173, 155);
 $dark-grey: rgb(51, 49, 54);
 $light-grey: rgb(241, 243, 245);
+
+// Typography
+$font-h1: 500 3rem/3rem "Jost", sans-serif;
+$font-h2: 500 2.5rem/3rem "Jost", sans-serif;
+$font-h3: 500 1.25rem/1.625rem "Jost", sans-serif;
+$font-body: 400 1rem/1.625rem "Jost", sans-serif;
