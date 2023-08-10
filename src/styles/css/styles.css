@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 html,
 body,
 div,
@@ -199,6 +200,57 @@ table {
   .header .nav .nav-links {
     display: none;
   }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 95px;
+  border-radius: 15px;
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+}
+.main .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main .text-container .title {
+  font: 500 3rem/3rem "Jost", sans-serif;
+  max-width: 20ch;
+}
+.main .text-container .description {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 46ch;
+}
+.main .text-container .button {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  align-self: flex-start;
+  padding: 18px 25px;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main .text-container .button:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
+.main .phone-image-container {
+  max-width: 284px;
+  max-height: 573px;
+  overflow: hidden;
+}
+.main .phone-image-container img {
+  object-fit: contain;
+  object-position: 10% 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */

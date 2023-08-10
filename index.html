@@ -11,46 +11,42 @@
       href="./assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="src/styles/css/styles.css" />
+    <!-- sass --watch src/styles/sas/styles.scss:src/styles/css/styles.css -->
 
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
+    <base href="http://127.0.0.1:5500/" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="logo-container">
-          <img
-            src="assets/shared/desktop/logo-dark.png"
-            alt="Logo da Designo"
-          />
+    <!-- HEADER -->
+    <header class="header container">
+      <div class="logo-container">
+        <img src="assets/shared/desktop/logo-dark.png" alt="Logo da Designo" />
+      </div>
+      <nav class="nav">
+        <div class="hamburguer">
+          <img src="assets/shared/mobile/icon-hamburger.svg" alt="" />
         </div>
-        <nav class="nav">
-          <div class="hamburguer">
-            <img src="assets/shared/mobile/icon-hamburger.svg" alt="" />
-          </div>
-          <a class="nav-links">our company</a>
-          <a class="nav-links">Locations</a>
-          <a class="nav-links">contact</a>
-        </nav>
-      </header>
-    </div>
-    <!--     Our Company Locations Contact Award-winning custom designs and digital
-    branding solutions With over 10 years in the industry, we are experienced in
-    creating fully responsive websites, app design, and engaging brand
-    experiences. Find out more about our services. Learn more Web Design View
-    Projects App Design View Projects Graphic Design View Projects Passionate
-    Each project starts with an in-depth brand research to ensure we only create
-    products that serve a purpose. We merge art, design, and technology into
-    exciting new solutions. Resourceful Everything that we do has a strategic
-    purpose. We use an agile approach in all of our projects and value customer
-    collaboration. It guarantees superior results that fulfill our clients’
-    needs. Friendly We are a group of enthusiastic folks who know how to put
-    people first. Our success depends on our customers, and we strive to give
-    them the best experience a company can provide. Let’s talk about your
-    project Ready to take it to the next level? Contact us today and find out
-    how our expertise can help your business grow. Get in touch Our company
-    Locations Contact Designo Central Office 3886 Wellington Street Toronto,
-    Ontario M9C 3J5 Contact Us (Central Office) P : +1 253-863-8967 M :
-    contact@designo.co -->
+        <a class="nav-links">our company</a>
+        <a class="nav-links">Locations</a>
+        <a class="nav-links">contact</a>
+      </nav>
+    </header>
+    <main class="main container">
+      <div class="text-container">
+        <h2 class="title">
+          Award-winning custom designs and digital branding solutions
+        </h2>
+        <p class="description">
+          With over 10 years in the industry, we are experienced in creating
+          fully responsive websites, app design, and engaging brand experiences.
+          Find out more about our services.
+        </p>
+        <button class="button">Learn more</button>
+      </div>
+      <div class="phone-image-container">
+        <img src="assets/home/desktop/image-hero-phone.png" alt="" />
+      </div>
+    </main>
 
     <script type="module" src="src/js/script.js"></script>
   </body>

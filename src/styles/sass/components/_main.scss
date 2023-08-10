@@ -1,0 +1,64 @@
+@import "../abstract/variables";
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 95px;
+
+  border-radius: 15px;
+
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: $peach;
+
+  color: $white;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .title {
+      font: $font-h1;
+      max-width: 20ch;
+    }
+
+    .description {
+      font: $font-body;
+      max-width: 46ch;
+    }
+
+    .button {
+      border: none;
+      border-radius: 8px;
+      background-color: $white;
+      align-self: flex-start;
+
+      padding: 18px 25px;
+
+      font: $font-link;
+      letter-spacing: +1px;
+      text-transform: uppercase;
+
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $light-peach;
+        color: $white;
+      }
+    }
+  }
+  .phone-image-container {
+    max-width: 284px;
+    max-height: 573px;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+      object-position: 10% 10%;
+    }
+  }
+}
