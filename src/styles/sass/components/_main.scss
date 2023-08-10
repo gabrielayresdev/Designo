@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 95px 110px 0 95px;
+  overflow: hidden;
 
   border-radius: 15px;
 
@@ -52,13 +53,16 @@
     }
   }
   .phone-image-container {
-    max-width: 284px;
-    max-height: 573px;
+    width: 284px;
+    height: 573px;
+    border-radius: 35px 35px 0 0;
+
+    position: relative;
+    top: 4rem;
+
     overflow: hidden;
 
-    img {
-      object-fit: contain;
-      object-position: -170px -100px;
-    }
+    background-image: url("/assets/home/desktop/image-hero-phone.png");
+    background-position: center;
   }
 }
