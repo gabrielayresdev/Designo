@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 95px;
+  padding: 95px 110px 0 95px;
 
   border-radius: 15px;
 
@@ -58,7 +58,7 @@
 
     img {
       object-fit: contain;
-      object-position: 10% 10%;
+      object-position: -170px -100px;
     }
   }
 }

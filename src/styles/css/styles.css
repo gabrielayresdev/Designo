@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 html,
 body,
 div,
@@ -206,7 +207,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 95px;
+  padding: 95px 110px 0 95px;
   border-radius: 15px;
   background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
@@ -250,7 +251,88 @@ table {
 }
 .main .phone-image-container img {
   object-fit: contain;
-  object-position: 10% 10%;
+  object-position: -170px -100px;
+}
+
+.expertises {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 24px;
+  column-gap: 30px;
+}
+.expertises #webdesign {
+  background-image: url("/assets/home/desktop/image-web-design-large.jpg");
+}
+.expertises #appdesign {
+  background-image: url("/assets/home/desktop/image-app-design.jpg");
+}
+.expertises #graphicdesign {
+  background-image: url("/assets/home/desktop/image-graphic-design.jpg");
+}
+.expertises a {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+}
+.expertises a:first-of-type {
+  grid-row: span 2;
+}
+.expertises a::after {
+  transition: all 0.4s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(231, 129, 107);
+  opacity: 0;
+  z-index: 2;
+  border-radius: 15px;
+}
+.expertises a:hover::after {
+  opacity: 0.7;
+}
+.expertises a:hover p::after {
+  transform: rotate(360deg);
+  transition: all 0.4s;
+}
+.expertises a h2 {
+  font: 500 2.5rem/3rem "Jost", sans-serif;
+  letter-spacing: 2px;
+  z-index: 4;
+}
+.expertises a p {
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 5px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.expertises a p::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("/assets/shared/desktop/icon-right-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
