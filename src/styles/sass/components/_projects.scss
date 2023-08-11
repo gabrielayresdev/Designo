@@ -1,0 +1,62 @@
+@import "../abstract/variables";
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  .project-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    .image-container {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &:hover {
+      .text-container {
+        background-color: $peach;
+      }
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem;
+
+      // Evitar bug de um card ser maior que o outro
+      flex-grow: 1;
+
+      background-color: $light-peach;
+      color: $white;
+
+      transition: all 0.4s;
+
+      h2 {
+        font: $font-h3;
+        letter-spacing: +5px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font: $font-body;
+        max-width: 26ch;
+        text-align: center;
+      }
+    }
+  }
+}
