@@ -4,7 +4,7 @@
   margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   row-gap: 24px;
   column-gap: 30px;
 
@@ -38,10 +38,6 @@
 
     cursor: pointer;
     position: relative;
-
-    &:first-of-type {
-      grid-row: 1 / -1;
-    }
 
     &::after {
       transition: all 0.4s;
