@@ -344,6 +344,7 @@ table {
   font: 500 2.5rem/3rem "Jost", sans-serif;
   letter-spacing: 2px;
   z-index: 4;
+  text-align: center;
 }
 .expertises a p {
   font: 400 0.875rem/0.875rem "Jost", sans-serif;
