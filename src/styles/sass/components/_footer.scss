@@ -103,45 +103,92 @@ footer {
             }
           }
         }
-
-        @media screen and (max-width: $breakpoint-mobile) {
-          .hamburguer {
-            display: block;
-          }
-
-          .nav-links {
-            display: none;
-          }
-        }
       }
     }
 
     .footer-bottom {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
       justify-content: space-between;
       padding-bottom: 70px;
+      margin-top: 2rem;
 
-      .info {
-        display: flex;
-        gap: 14rem;
-        margin-top: 30px;
-
-        font: $font-body;
-        color: $white;
-      }
+      font: $font-body;
+      color: $white;
 
       .social-media {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
         align-items: center;
         align-self: flex-end;
-
+        justify-self: flex-end;
         a {
           cursor: pointer;
 
           &:hover {
             filter: contrast(120%);
           }
+        }
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        & {
+          grid-template-columns: repeat(3, auto);
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .contact {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+
+      padding: 4rem 1.5rem;
+
+      h2 {
+        max-width: 11ch;
+        margin: 0 auto 1rem;
+      }
+      p {
+        max-width: 32ch;
+      }
+    }
+    .footer {
+      .footer-nav {
+        flex-direction: column;
+        border-bottom: none;
+        padding-bottom: 0;
+        .logo-container {
+          padding-bottom: 2rem;
+          width: 100%;
+
+          display: flex;
+          justify-content: center;
+
+          border-bottom: 1px solid $dark-grey;
+        }
+
+        .nav {
+          margin-top: 2rem;
+          flex-direction: column;
+          gap: 2rem;
+
+          .nav-links {
+            padding: 0;
+          }
+        }
+      }
+
+      .footer-bottom {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2.5rem;
+        text-align: center;
+
+        .social-media {
+          justify-self: center;
         }
       }
     }

@@ -40,7 +40,7 @@
     position: relative;
 
     &:first-of-type {
-      grid-row: span 2;
+      grid-row: 1 / -1;
     }
 
     &::after {
@@ -94,6 +94,12 @@
         background-repeat: no-repeat;
         display: block;
       }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
     }
   }
 }
