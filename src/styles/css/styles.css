@@ -802,7 +802,7 @@ footer .footer .footer-bottom .social-media a:hover {
   }
 }
 
-.contact {
+.contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -816,7 +816,7 @@ footer .footer .footer-bottom .social-media a:hover {
   z-index: 0;
   padding: 3.5rem 6rem;
 }
-.contact::before {
+.contact-form::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -826,28 +826,28 @@ footer .footer .footer-bottom .social-media a:hover {
   position: absolute;
   z-index: -1;
 }
-.contact .text-container {
+.contact-form .text-container {
   color: rgb(255, 255, 255);
 }
-.contact .text-container .title {
+.contact-form .text-container .title {
   font: 500 3rem/3rem "Jost", sans-serif;
   margin-bottom: 2rem;
 }
-.contact .text-container p {
+.contact-form .text-container p {
   font: 400 1rem/1.625rem "Jost", sans-serif;
   max-width: 47ch;
 }
-.contact form {
+.contact-form form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.contact form .input {
+.contact-form form .input {
   position: relative;
   width: 100%;
 }
-.contact form .input input,
-.contact form .input textarea {
+.contact-form form .input input,
+.contact-form form .input textarea {
   border: none;
   border-bottom: 1px solid rgb(241, 243, 245);
   background: transparent;
@@ -859,22 +859,22 @@ footer .footer .footer-bottom .social-media a:hover {
   box-shadow: inset 0 -2px transparent;
   transition: all 0.3s;
 }
-.contact form .input input:focus,
-.contact form .input textarea:focus {
+.contact-form form .input input:focus,
+.contact-form form .input textarea:focus {
   border-bottom: 1px solid rgb(255, 255, 255);
   box-shadow: inset 0 -2px rgb(255, 255, 255);
 }
-.contact form .input input:focus ~ label, .contact form .input input:not(:placeholder-shown) ~ label,
-.contact form .input textarea:focus ~ label,
-.contact form .input textarea:not(:placeholder-shown) ~ label {
+.contact-form form .input input:focus ~ label, .contact-form form .input input:not(:placeholder-shown) ~ label,
+.contact-form form .input textarea:focus ~ label,
+.contact-form form .input textarea:not(:placeholder-shown) ~ label {
   display: none;
 }
-.contact form .input textarea {
+.contact-form form .input textarea {
   resize: vertical;
   min-height: 100px;
   max-height: 300px;
 }
-.contact form .input label {
+.contact-form form .input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -884,7 +884,7 @@ footer .footer .footer-bottom .social-media a:hover {
   color: rgb(255, 255, 255);
   cursor: text;
 }
-.contact form button {
+.contact-form form button {
   border: none;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
@@ -896,19 +896,19 @@ footer .footer .footer-bottom .social-media a:hover {
   cursor: pointer;
   transition: all 0.3s;
 }
-.contact form button:hover {
+.contact-form form button:hover {
   background-color: rgb(255, 173, 155);
   color: rgb(255, 255, 255);
 }
 @media (max-width: 1024px) {
-  .contact {
+  .contact-form {
     grid-template-columns: 1fr;
     padding: 3.5rem;
     gap: 2.5rem;
   }
 }
 @media (max-width: 768px) {
-  .contact {
+  .contact-form {
     width: 100%;
     border-radius: 0;
     padding: 1.5rem;
