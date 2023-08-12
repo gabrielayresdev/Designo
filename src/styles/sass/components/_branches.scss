@@ -1,0 +1,71 @@
+@import "../abstract/variables";
+
+.branches {
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    h2 {
+      font: $font-h3;
+      letter-spacing: +5px;
+    }
+
+    button {
+      border: none;
+      border-radius: 8px;
+      background-color: $peach;
+      color: $white;
+
+      padding: 18px 25px;
+
+      font: $font-link;
+      letter-spacing: +1px;
+      text-transform: uppercase;
+
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $light-peach;
+      }
+    }
+  }
+
+  @media ((max-width: $breakpoint-tablet)) AND (min-width: $breakpoint-mobile) {
+    & {
+      flex-direction: column;
+      gap: 2rem;
+
+      .qualities-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        row-gap: 1rem;
+        column-gap: 3rem;
+
+        img {
+          grid-row: span 2;
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    & {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+}

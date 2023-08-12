@@ -1,66 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <!-- sass --watch src/styles/sas/styles.scss:src/styles/css/styles.css -->
 
-  About us
-  Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-  We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-  that make real impact. We’re always looking forward to creating brands, products, and 
-  digital experiences that connect with our clients' audiences.
+    <title>Designo | Home</title>
+    <base href="http://127.0.0.1:5500/" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header container">
+      <a class="logo-container" href="index.html">
+        <img src="assets/shared/desktop/logo-dark.png" alt="Logo da Designo" />
+      </a>
+      <nav class="nav">
+        <div class="hamburguer">
+          <img src="assets/shared/mobile/icon-hamburger.svg" alt="" />
+        </div>
+        <a href="src/about.html" class="nav-links">our company</a>
+        <a class="nav-links">Locations</a>
+        <a class="nav-links">contact</a>
+      </nav>
+    </header>
+    <!-- CARD 1-->
+    <div class="about-card container bg-1 peach">
+      <div class="text-container ">
+        <h2 class="title">About Us</h2>
+        <p>Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.</p>
+      </div>
+      <div class="img-container">
+        <img src="/assets/about/desktop/image-about-hero.jpg" alt="">
+      </div>
+    </div>
 
-  World-class talent
-  We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
-  crafted from concept to launch, ensuring success in its given market. We are constantly updating 
-  our skills in a myriad of platforms.
+    <!-- CARD 2 -->
+    <div class="about-card container bg-2 lightPeach">
+      <div class="img-container">
+        <img src="/assets/about/desktop/image-world-class-talent.jpg" alt="">
+      </div>
+      <div class="text-container">
+        <h2 class="title">World-class talent</h2>
+        <p>We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms. </p>
 
-  Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
-  are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
-  Clients have always been impressed with our high-quality outcomes that encapsulates their 
-  brand’s story and mission.
+        <p>  Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand's story and mission.</p>
+      </div>
+    </div>
+    <!-- BRANCHES -->
+    <section class="branches container">
+      <div class="branch">
+        <img src="/assets/shared/desktop/illustration-canada.svg" alt="" />
+        <h2>CANADA</h2>
+        <button>See location</button>
+      </div>
+    <div class="branch">
+      <img src="/assets/shared/desktop/illustration-australia.svg" alt="" />
+      <h2>AUSTRALIA</h2>
+      <button>See location</button>
+    </div>
+    <div class="branch">
+      <img src="/assets/shared/desktop/illustration-united-kingdom.svg" alt="" />
+      <h2>UNITED KINGDOM</h2>
+      <button>See location</button>
+    </div>
+  </section>
+  <!-- CARD 3 -->
+  <div class="about-card container bg-3 lightPeach">
+    <div class="text-container">
+      <h2 class="title">The real deal</h2>
+      <p>
+        As strategic partners in our clients' businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.
+      </p>
 
-  The real deal
-  As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
-  Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
-  opportunity. We make design and technology more accessible and give you tools to measure success.
+      <p>
+        We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.
+      </p>
+    </div>
+    <div class="img-container">
+      <img src="/assets/about/desktop/image-real-deal.jpg" alt="">
+    </div>
+  </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="contact container">
+        <div>
+          <h2>Let’s talk about your project</h2>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+        </div>
+        <button class="button">Get in touch</button>
+      </div>
+      <div class="footer">
+        <div class="footer-nav">
+          <div class="logo-container">
+            <img
+              src="assets/shared/desktop/logo-light.png"
+              alt="Logo da Designo"
+            />
+          </div>
+          <nav class="nav">
+            <a href="src/about.html" class="nav-links">our company</a>
+            <a class="nav-links">Locations</a>
+            <a class="nav-links">contact</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            Designo Central Office </br> 
+            3886 Wellington Street </br> 
+            Toronto, Ontario M9C 3J5
+          </div>
+          <div>
+            Contact Us (Central Office) </br> 
+            P : +1 253-863-8967 </br>
+            M : contact@designo.co
+          </div>
+          <div class="social-media">
+            <a href=""><img src="/assets/shared/desktop/icon-facebook.svg" alt=""></a>
+            <a href=""><img src="/assets/shared/desktop/icon-youtube.svg" alt=""></a>
+            <a href=""><img src="/assets/shared/desktop/icon-twitter.svg" alt=""></a>
+            <a href=""><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""></a>
+            <a href=""><img src="/assets/shared/desktop/icon-instagram.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
-  we inspire audiences to take action and drive real results.
-
-  Canada
-  See location
-
-  Australia
-  See location
-
-  United Kingdom
-  See location
-
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+    <script type="module" src="src/js/script.js"></script>
+  </body>
 </html>
