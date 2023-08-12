@@ -51,7 +51,7 @@
       input,
       textarea {
         border: none;
-        border-bottom: 2px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
         background: transparent;
         outline: none;
         width: 100%;
@@ -61,12 +61,12 @@
 
         padding: 0.25rem;
 
-        box-shadow: inset 0 -1px transparent;
+        box-shadow: inset 0 -2px transparent;
         transition: all 0.3s;
 
         &:focus {
-          border-bottom: 2px solid $white;
-          box-shadow: inset 0 -1px $white;
+          border-bottom: 1px solid $white;
+          box-shadow: inset 0 -2px $white;
         }
 
         &:focus ~ label,
@@ -113,5 +113,16 @@
         color: $white;
       }
     }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+    padding: 3.5rem;
+    gap: 2.5rem;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+    border-radius: 0;
+    padding: 1.5rem;
   }
 }
