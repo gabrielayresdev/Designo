@@ -9,6 +9,10 @@
   grid-row: span 2;
 }
 
+.flex-center {
+  align-items: center;
+}
+
 @media (max-width: $breakpoint-tablet) {
   .container {
     width: 89%;
