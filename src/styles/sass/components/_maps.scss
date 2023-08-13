@@ -14,7 +14,6 @@
       z-index: 0;
     }
     .address {
-      padding: 5.5rem;
       background-color: #fdf3f0;
       background-image: url("../../../../assets/shared/desktop/bg-pattern-two-circles.svg");
       background-repeat: no-repeat;
@@ -23,20 +22,72 @@
       border-radius: 15px;
 
       grid-column: span 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5rem;
+
       .title {
         display: block;
         font: $font-h2;
         margin-bottom: 1.5rem;
         color: $peach;
       }
-      p {
-        display: inline-block;
-        margin-right: 2rem;
-        font: $font-body;
+      .text-container {
+        p {
+          display: inline-block;
+          margin-right: 2rem;
+          font: $font-body;
 
-        span {
+          span {
+            display: block;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    .map-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 0;
+      row-gap: 2rem;
+
+      .map {
+        grid-row: 1;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 100vw;
+
+    .map-row {
+      gap: 0;
+
+      .address {
+        border-radius: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+        padding: 0;
+
+        .title {
+          margin: 0;
           display: block;
-          font-weight: bold;
+        }
+        .text-container {
+          p {
+            margin: 0;
+            display: block;
+            margin-bottom: 2rem;
+          }
         }
       }
     }

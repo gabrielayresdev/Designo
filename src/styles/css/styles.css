@@ -168,15 +168,17 @@ table {
   }
 }
 .header {
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 11.5vw;
   position: relative;
 }
 @media (max-width: 768px) {
-  .header .header {
+  .header {
     padding: 2rem 0;
+    width: 100vw;
+    padding: 4rem 11.5vw;
   }
 }
 .header .logo-container img {
@@ -982,13 +984,16 @@ footer .footer .footer-bottom .social-media a:hover {
   z-index: 0;
 }
 .maps .map-row .address {
-  padding: 5.5rem;
   background-color: #fdf3f0;
   background-image: url("../../../../assets/shared/desktop/bg-pattern-two-circles.svg");
   background-repeat: no-repeat;
   background-position: 0% 100%;
   border-radius: 15px;
   grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
 }
 .maps .map-row .address .title {
   display: block;
@@ -996,14 +1001,53 @@ footer .footer .footer-bottom .social-media a:hover {
   margin-bottom: 1.5rem;
   color: rgb(231, 129, 107);
 }
-.maps .map-row .address p {
+.maps .map-row .address .text-container p {
   display: inline-block;
   margin-right: 2rem;
   font: 400 1rem/1.625rem "Jost", sans-serif;
 }
-.maps .map-row .address p span {
+.maps .map-row .address .text-container p span {
   display: block;
   font-weight: bold;
+}
+@media (max-width: 1024px) {
+  .maps .map-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0;
+    row-gap: 2rem;
+  }
+  .maps .map-row .map {
+    grid-row: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .maps {
+    width: 100vw;
+  }
+  .maps .map-row {
+    gap: 0;
+  }
+  .maps .map-row .address {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+  .maps .map-row .address .title {
+    margin: 0;
+    display: block;
+  }
+  .maps .map-row .address .text-container p {
+    margin: 0;
+    display: block;
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
