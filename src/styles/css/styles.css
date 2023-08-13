@@ -915,4 +915,43 @@ footer .footer .footer-bottom .social-media a:hover {
   }
 }
 
+.maps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.maps .map-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.maps .map-row .map {
+  height: 400px;
+  width: 100%;
+}
+.maps .map-row .address {
+  padding: 5.5rem;
+  background-color: #fdf3f0;
+  background-image: url("../../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  border-radius: 15px;
+  grid-column: span 2;
+}
+.maps .map-row .address .title {
+  display: block;
+  font: 500 2.5rem/3rem "Jost", sans-serif;
+  margin-bottom: 1.5rem;
+  color: rgb(231, 129, 107);
+}
+.maps .map-row .address p {
+  display: inline-block;
+  margin-right: 2rem;
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+}
+.maps .map-row .address p span {
+  display: block;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=styles.css.map */

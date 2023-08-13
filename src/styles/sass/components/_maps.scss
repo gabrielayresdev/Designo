@@ -1,0 +1,41 @@
+.maps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .map-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    .map {
+      height: 400px;
+      width: 100%;
+    }
+    .address {
+      padding: 5.5rem;
+      background-color: #fdf3f0;
+      background-image: url("../../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+
+      border-radius: 15px;
+
+      grid-column: span 2;
+      .title {
+        display: block;
+        font: $font-h2;
+        margin-bottom: 1.5rem;
+        color: $peach;
+      }
+      p {
+        display: inline-block;
+        margin-right: 2rem;
+        font: $font-body;
+
+        span {
+          display: block;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
