@@ -1,3 +1,7 @@
+import initDropdown from "./modules/dropdown.js";
 import initMap from "./modules/maps.js";
 
-initMap(L);
+if (typeof L !== "undefined") {
+  initMap(L);
+}
+initDropdown();

@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 4rem 11.5vw;
+  position: relative;
 
   @media (max-width: $breakpoint-mobile) {
     .header {
@@ -18,48 +19,104 @@
       max-height: 27px;
     }
   }
-  .nav {
-    display: flex;
-    align-items: center;
-    gap: 2.625rem;
 
-    .hamburguer {
-      display: none;
+  [data-dropdown="burger"],
+  [data-dropdown="close"] {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    [data-dropdown="burger"].active,
+    [data-dropdown="close"].active {
+      display: block;
     }
+  }
 
-    .nav-links {
-      font: $font-link;
-      letter-spacing: +2px;
-      text-transform: uppercase;
-      padding: 1rem;
-      cursor: pointer;
+  .nav {
+    .links-container {
+      display: flex;
+      align-items: center;
+      gap: 2.625rem;
+      .nav-links {
+        font: $font-link;
+        letter-spacing: +2px;
+        text-transform: uppercase;
+        padding: 1rem;
+        cursor: pointer;
 
-      &::after {
-        content: "";
-        width: 0;
-        height: 2px;
-        display: block;
-        margin-top: 2px;
-        transition: width 0.5s;
-      }
-
-      &:hover {
         &::after {
           content: "";
-          background-color: $light-grey;
-          width: 100%;
+          width: 0;
+          height: 2px;
+          display: block;
+          margin-top: 2px;
+          transition: width 0.5s;
+        }
+
+        &:hover {
+          &::after {
+            content: "";
+            background-color: $light-grey;
+            width: 100%;
+          }
         }
       }
     }
 
-    @media screen and (max-width: $breakpoint-mobile) {
-      .hamburguer {
-        display: block;
+    @media (max-width: $breakpoint-tablet) {
+      padding: 4rem 5.5vw;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 0;
+
+      background-color: #00000099;
+      color: $white;
+
+      height: 100vh;
+      width: 100vw;
+
+      z-index: 100;
+
+      animation: openDropdown 0.4s forwards;
+      overflow: hidden;
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+
+        background-color: $black;
+        width: 100%;
+        padding: 4rem 2rem;
+
+        .nav-links {
+          font: $font-h3;
+          letter-spacing: +2px;
+          background-color: $black;
+          padding: 0;
+        }
       }
 
-      .nav-links {
-        display: none;
+      display: none;
+
+      &.active {
+        display: flex;
       }
     }
+  }
+}
+
+@keyframes openDropdown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
   }
 }

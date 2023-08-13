@@ -171,7 +171,8 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 4rem 11.5vw;
+  position: relative;
 }
 @media (max-width: 768px) {
   .header .header {
@@ -181,22 +182,29 @@ table {
 .header .logo-container img {
   max-height: 27px;
 }
-.header .nav {
+.header [data-dropdown=burger],
+.header [data-dropdown=close] {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header [data-dropdown=burger].active,
+  .header [data-dropdown=close].active {
+    display: block;
+  }
+}
+.header .nav .links-container {
   display: flex;
   align-items: center;
   gap: 2.625rem;
 }
-.header .nav .hamburguer {
-  display: none;
-}
-.header .nav .nav-links {
+.header .nav .links-container .nav-links {
   font: 400 0.875rem/0.875rem "Jost", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 1rem;
   cursor: pointer;
 }
-.header .nav .nav-links::after {
+.header .nav .links-container .nav-links::after {
   content: "";
   width: 0;
   height: 2px;
@@ -204,20 +212,60 @@ table {
   margin-top: 2px;
   transition: width 0.5s;
 }
-.header .nav .nav-links:hover::after {
+.header .nav .links-container .nav-links:hover::after {
   content: "";
   background-color: rgb(241, 243, 245);
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .header .nav .hamburguer {
-    display: block;
+@media (max-width: 1024px) {
+  .header .nav {
+    padding: 4rem 5.5vw;
   }
-  .header .nav .nav-links {
+}
+@media (max-width: 768px) {
+  .header .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    animation: openDropdown 0.4s forwards;
+    overflow: hidden;
     display: none;
+  }
+  .header .nav .links-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: rgb(29, 28, 30);
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  .header .nav .links-container .nav-links {
+    font: 500 1.25rem/1.625rem "Jost", sans-serif;
+    letter-spacing: 2px;
+    background-color: rgb(29, 28, 30);
+    padding: 0;
+  }
+  .header .nav.active {
+    display: flex;
   }
 }
 
+@keyframes openDropdown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
 .main {
   display: flex;
   justify-content: space-between;
@@ -931,6 +979,7 @@ footer .footer .footer-bottom .social-media a:hover {
   height: 400px;
   width: 100%;
   outline: none;
+  z-index: 0;
 }
 .maps .map-row .address {
   padding: 5.5rem;

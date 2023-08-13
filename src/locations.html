@@ -21,17 +21,20 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header container">
+    <header class="header ">
       <a class="logo-container" href="index.html">
         <img src="assets/shared/desktop/logo-dark.png" alt="Logo da Designo" />
       </a>
-      <nav class="nav">
-        <div class="hamburguer">
-          <img src="assets/shared/mobile/icon-hamburger.svg" alt="" />
+      <div class="menuControl">
+        <img src="assets/shared/mobile/icon-hamburger.svg" alt=""  data-dropdown="burger" class="active"/>
+        <img src="assets/shared/mobile/icon-close.svg" alt=""  data-dropdown="close">
+      </div>
+      <nav class="nav" data-dropdown="nav">
+        <div class="links-container">
+          <a href="src/about.html" class="nav-links">our company</a>
+          <a href="src/locations.html" class="nav-links">Locations</a>
+          <a href="src/contact.html" class="nav-links">contact</a>
         </div>
-        <a href="src/about.html" class="nav-links">our company</a>
-        <a href="src/locations.html" class="nav-links">Locations</a>
-        <a href="src/contact.html" class="nav-links">contact</a>
       </nav>
     </header>
     <!-- MAPS -->
