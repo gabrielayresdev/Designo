@@ -1,0 +1,39 @@
+@import "../../abstract/variables";
+
+.outdoor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: $peach;
+  position: relative;
+  border-radius: 15px;
+
+  background-image: url("/assets/app-design/desktop/bg-pattern-intro-app.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 0% 50%;
+
+  text-align: center;
+  color: $white;
+  margin-bottom: 10rem;
+  padding: 4rem;
+
+  h2 {
+    font: $font-h1;
+  }
+  p {
+    font: $font-body;
+    max-width: 37ch;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 100vw;
+    border-radius: 0;
+    padding: 6.5rem 1.5rem;
+
+    background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+    background-size: contain;
+    background-position: 100%;
+  }
+}

@@ -28,6 +28,11 @@
     &:hover {
       .text-container {
         background-color: $peach;
+        color: $white;
+        h2 {
+          color: $white;
+          transition: all 0.4s;
+        }
       }
     }
 
@@ -41,8 +46,8 @@
       // Evitar bug de um card ser maior que o outro
       flex-grow: 1;
 
-      background-color: $light-peach;
-      color: $white;
+      background-color: #fdf3f0;
+      color: $black;
 
       transition: all 0.4s;
 
@@ -50,6 +55,7 @@
         font: $font-h3;
         letter-spacing: +5px;
         text-transform: uppercase;
+        color: $peach;
       }
 
       p {
