@@ -13,71 +13,168 @@
     <link rel="stylesheet" href="./styles/css/styles.css" />
     <!-- sass --watch src/styles/sas/styles.scss:src/styles/css/styles.css -->
 
-    <title>Designo | Contact </title>
+    <title>Designo | Contact</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header container">
       <a class="logo-container" href="../index.html">
-        <img src="/assets/shared/desktop/logo-dark.png" alt="Logo da Designo" />
+        <img
+          src="../assets/shared/desktop/logo-dark.png"
+          alt="Logo da Designo"
+        />
       </a>
       <div class="menuControl">
-        <img src="/assets/shared/mobile/icon-hamburger.svg" alt=""  data-dropdown="burger" class="active"/>
-        <img src="/assets/shared/mobile/icon-close.svg" alt=""  data-dropdown="close">
+        <img
+          src="/assets/shared/mobile/icon-hamburger.svg"
+          alt=""
+          data-dropdown="burger"
+          class="active"
+        />
+        <img
+          src="/assets/shared/mobile/icon-close.svg"
+          alt=""
+          data-dropdown="close"
+        />
       </div>
       <nav class="nav" data-dropdown="nav">
         <div class="links-container">
-          <a href="about.html" class="nav-links">our company</a>
-          <a href="locations.html" class="nav-links">Locations</a>
-          <a href="contact.html" class="nav-links">contact</a>
+          <div class="nav-wrapper">
+            <div class="sl-nav">
+              Language:
+              <ul>
+                <li>
+                  <b id="selected"
+                    ><span class="text" Language="br">Português</span>
+                    <span class="text" Language="eng">English</span></b
+                  >
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <div class="triangle"></div>
+                  <ul>
+                    <li class="lang-item" data-lang="br">
+                      <i class="sl-flag flag-br"><div id="germany"></div></i>
+                      <span class="active">Português</span>
+                    </li>
+                    <li class="lang-item" data-lang="eng">
+                      <i class="sl-flag flag-usa"><div id="english"></div></i>
+                      <span>English</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="about.html" class="nav-links">
+            <span class="text" Language="eng">our company</span>
+            <span class="text" Language="br">nossa empresa</span>
+          </a>
+          <a href="locations.html" class="nav-links">
+            <span class="text" Language="eng">Locations</span>
+            <span class="text" Language="br">Localizações</span>
+          </a>
+          <a href="contact.html" class="nav-links">
+            <span class="text" Language="eng">contact</span>
+            <span class="text" Language="br">contato</span>
+          </a>
         </div>
       </nav>
     </header>
     <!-- FORM -->
     <div class="contact-form container">
       <div class="text-container">
-        <h2 class="title">Contact Us</h2>
-        <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+        <h2 class="title">
+          <span class="text" Language="eng">Contact Us</span>
+          <span class="text" Language="br">Entre em contato</span>
+        </h2>
+        <p>
+          <span class="text" Language="eng">
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </span>
+          <span class="text" Language="br">
+            Pronto para levar ao próximo nível? Vamos falar sobre o seu projeto
+            ou ideia e descobrir como podemos ajudar o crescimento do seu
+            negócio. Se você procura experiências digitais únicas que se
+            relacionem com seus usuários, nos mande uma mensagem.
+          </span>
+        </p>
       </div>
       <form>
         <div class="input">
-          <input type="text" name="name" id="name" placeholder=" ">
-          <label for="name" class="flex-center">Name</label>
+          <input type="text" name="name" id="name" placeholder=" " />
+          <label for="name" class="flex-center">
+            <span class="text" Language="eng">Name</span>
+            <span class="text" Language="br">Nome</span>
+          </label>
         </div>
         <div class="input">
-          <input type="email" name="email" id="email" placeholder=" ">
-          <label for="email" class="flex-center">Email address</label>
+          <input type="email" name="email" id="email" placeholder=" " />
+          <label for="email" class="flex-center">
+            <span class="text" Language="eng">Email address</span>
+            <span class="text" Language="br">Endereço de e-mail</span>
+          </label>
         </div>
         <div class="input">
-          <input type="tel" name="tel" id="tel" placeholder=" ">
-          <label for="tel" class="flex-center">Phone</label>
+          <input type="tel" name="tel" id="tel" placeholder=" " />
+          <label for="tel" class="flex-center">
+            <span class="text" Language="eng">Phone</span>
+            <span class="text" Language="br">Telefone</span>
+          </label>
         </div>
         <div class="input">
           <textarea name="message" id="message" placeholder=" "></textarea>
-          <label for="message">Your Message</label>
+          <label for="message">
+            <span class="text" Language="eng">Your Message</span>
+            <span class="text" Language="br">Sua mensagem</span>
+          </label>
         </div>
-        <button>submit</button>
+        <button>
+          <span class="text" Language="eng">submit</span>
+          <span class="text" Language="br">enviar</span>
+        </button>
       </form>
     </div>
+
     <!-- BRANCHES -->
     <section class="branches container">
       <div class="branch">
         <img src="/assets/shared/desktop/illustration-canada.svg" alt="" />
-        <h2>CANADA</h2>
-        <a href="locations.html#canada">See location</a>
+        <h2>
+          <span class="text" Language="eng">CANADA</span>
+          <span class="text" Language="br">CANADÁ</span>
+        </h2>
+        <a href="locations.html#canada">
+          <span class="text" Language="eng">See location</span>
+          <span class="text" Language="br">Ver localização</span>
+        </a>
       </div>
-    <div class="branch">
-      <img src="/assets/shared/desktop/illustration-australia.svg" alt="" />
-      <h2>AUSTRALIA</h2>
-      <a href="locations.html#australia">See location</a>
-    </div>
-    <div class="branch">
-      <img src="/assets/shared/desktop/illustration-united-kingdom.svg" alt="" />
-      <h2>UNITED KINGDOM</h2>
-      <a href="locations.html#uk">See location</a>
-    </div>
-  </section>
-  <span class="detail rotate"></span>
+      <div class="branch">
+        <img src="/assets/shared/desktop/illustration-australia.svg" alt="" />
+        <h2>
+          <span class="text" Language="eng">AUSTRALIA</span>
+          <span class="text" Language="br">AUSTRÁLIA</span>
+        </h2>
+        <a href="locations.html#australia">
+          <span class="text" Language="eng">See location</span>
+          <span class="text" Language="br">Ver localização</span>
+        </a>
+      </div>
+      <div class="branch">
+        <img
+          src="/assets/shared/desktop/illustration-united-kingdom.svg"
+          alt=""
+        />
+        <h2>
+          <span class="text" Language="eng">UNITED KINGDOM</span>
+          <span class="text" Language="br">REINO UNIDO</span>
+        </h2>
+        <a href="locations.html#uk">
+          <span class="text" Language="eng">See location</span>
+          <span class="text" Language="br">Ver localização</span>
+        </a>
+      </div>
     </section>
 
     <!-- FOOTER -->
@@ -91,28 +188,61 @@
             />
           </div>
           <nav class="nav">
-            <a href="about.html" class="nav-links">our company</a>
-            <a href="locations.html" class="nav-links">Locations</a>
-            <a href="contact.html" class="nav-links">contact</a>
+            <a href="about.html" class="nav-links">
+              <span class="text" Language="eng">our company</span>
+              <span class="text" Language="br">nossa empresa</span>
+            </a>
+            <a href="locations.html" class="nav-links">
+              <span class="text" Language="eng">Locations</span>
+              <span class="text" Language="br">Localizações</span>
+            </a>
+            <a href="contact.html" class="nav-links">
+              <span class="text" Language="eng">contact</span>
+              <span class="text" Language="br">contato</span>
+            </a>
           </nav>
         </div>
         <div class="footer-bottom">
           <div>
-            Designo Central Office </br> 
-            3886 Wellington Street </br> 
-            Toronto, Ontario M9C 3J5
+            <span class="text" Language="eng">
+              Designo Central Office <br />
+              3886 Wellington Street <br />
+              Toronto, Ontario M9C 3J5
+            </span>
+            <span class="text" Language="br">
+              Escritório Central Designo <br />
+              3886 Wellington Street <br />
+              Toronto, Ontário M9C 3J5
+            </span>
           </div>
           <div>
-            Contact Us (Central Office) </br> 
-            P : +1 253-863-8967 </br>
-            M : contact@designo.co
+            <span class="text" Language="eng">
+              Contact Us (Central Office) <br />
+              P : +1 253-863-8967 <br />
+              M : contact@designo.co
+            </span>
+            <span class="text" Language="br">
+              Entre em contato (Escritório Central) <br />
+              P : +1 253-863-8967 <br />
+              M : contato@designo.co
+            </span>
           </div>
           <div class="social-media">
-            <a href=""><img src="/assets/shared/desktop/icon-facebook.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-youtube.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-twitter.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-instagram.svg" alt=""></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-facebook.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-youtube.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-twitter.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-instagram.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>

@@ -15,21 +15,64 @@
 
     <title>Designo | Home</title>
   </head>
-  <body>
+  <body class="eng">
     <!-- HEADER -->
     <header class="header container">
       <a class="logo-container" href="index.html">
         <img src="assets/shared/desktop/logo-dark.png" alt="Logo da Designo" />
       </a>
       <div class="menuControl">
-        <img src="assets/shared/mobile/icon-hamburger.svg" alt=""  data-dropdown="burger" class="active"/>
-        <img src="assets/shared/mobile/icon-close.svg" alt=""  data-dropdown="close">
+        <img
+          src="assets/shared/mobile/icon-hamburger.svg"
+          alt=""
+          data-dropdown="burger"
+          class="active"
+        />
+        <img
+          src="assets/shared/mobile/icon-close.svg"
+          alt=""
+          data-dropdown="close"
+        />
       </div>
       <nav class="nav" data-dropdown="nav">
         <div class="links-container">
-          <a href="./src/about.html" class="nav-links">our company</a>
-          <a href="./src/locations.html" class="nav-links">Locations</a>
-          <a href="./src/contact.html" class="nav-links">contact</a>
+          <div class="nav-wrapper">
+            <div class="sl-nav">
+              Language:
+              <ul>
+                <li>
+                  <b id="selected"
+                    ><span class="text" Language="br">Português</span>
+                    <span class="text" Language="eng">English</span></b
+                  >
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <div class="triangle"></div>
+                  <ul>
+                    <li class="lang-item" data-lang="br">
+                      <i class="sl-flag flag-br"><div id="germany"></div></i>
+                      <span class="active">Português</span>
+                    </li>
+                    <li class="lang-item" data-lang="eng">
+                      <i class="sl-flag flag-usa"><div id="english"></div></i>
+                      <span>English</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="./src/about.html" class="nav-links">
+            <span class="text" Language="eng">our company</span>
+            <span class="text" Language="br">nossa empresa</span>
+          </a>
+          <a href="./src/locations.html" class="nav-links">
+            <span class="text" Language="eng">Locations</span>
+            <span class="text" Language="br">Filiais</span>
+          </a>
+          <a href="./src/contact.html" class="nav-links">
+            <span class="text" Language="eng">contact</span>
+            <span class="text" Language="br">contato</span>
+          </a>
         </div>
       </nav>
     </header>
@@ -37,62 +80,116 @@
     <main class="main container">
       <div class="text-container">
         <h2 class="title">
-          Award-winning custom designs and digital branding solutions
+          <span class="text" Language="eng"
+            >Award-winning custom designs and digital branding solutions</span
+          >
+          <span class="text" Language="br">
+            soluções premiadas de design personalizadas e branding digital
+          </span>
         </h2>
         <p class="description">
-          With over 10 years in the industry, we are experienced in creating
-          fully responsive websites, app design, and engaging brand experiences.
-          Find out more about our services.
+          <span class="text" Language="eng">
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </span>
+          <span class="text" Language="br">
+            Com mais de 10 anos na indústria, temos experiência em criar sites
+            totalmente responsivos, design de aplicativos e experiências de
+            marca envolventes. Saiba mais sobre nossos serviços.
+          </span>
         </p>
-        <a href="./src/about.html" class="button">Learn more</a>
+        <a href="./src/about.html" class="button"
+          ><span class="text" Language="eng">Learn more</span>
+          <span class="text" Language="br">Saiba mais</span>
+        </a>
       </div>
-      <div class="phone-image-container">
-        
-      </div>
+      <div class="phone-image-container"></div>
     </main>
     <span class="detail"></span>
     <!-- EXPERTISES -->
     <section class="expertises container">
       <a href="./src/web-design.html" id="webdesign" class="row-2 expertise">
-        <h2 class="title">WEB DESIGN</h2>
-        <p>VIEW PROJECTS</p>
+        <h2 class="title">
+          <span class="text" Language="eng">WEB DESIGN</span>
+          <span class="text" Language="br">WEB DESIGN</span>
+        </h2>
+        <p>
+          <span class="text" Language="eng">VIEW PROJECTS</span
+          ><span class="text" Language="br">Ver projetos</span>
+        </p>
       </a>
       <a href="./src/app-design.html" id="appdesign" class="expertise">
-        <h2 class="title">APP DESIGN</h2>
-        <p>VIEW PROJECTS</p>
+        <h2 class="title">
+          <span class="text" Language="eng">APP DESIGN</span>
+          <span class="text" Language="br">APP DESIGN</span>
+        </h2>
+        <p>
+          <span class="text" Language="eng">VIEW PROJECTS</span
+          ><span class="text" Language="br">Ver projetos</span>
+        </p>
       </a>
       <a href="./src/graphic-design.html" id="graphicdesign" class="expertise">
-        <h2 class="title">GRAPHIC DESIGN</h2>
-        <p>VIEW PROJECTS</p>
+        <h2 class="title">
+          <span class="text" Language="eng">GRAPHIC DESIGN</span>
+          <span class="text" Language="br">GRAPHIC DESIGN</span>
+        </h2>
+        <p>
+          <span class="text" Language="eng">VIEW PROJECTS</span>
+          <span class="text" Language="br">Ver projetos</span>
+        </p>
       </a>
     </section>
     <!-- QUALITIES -->
     <section class="qualities container">
       <div class="qualities-item">
         <img src="/assets/home/desktop/illustration-passionate.svg" alt="" />
-        <h2>PASSIONATE</h2>
+        <h2><span class="text" Language="eng">PASSIONATE</span></h2>
         <p>
-          Each project starts with an in-depth brand research to ensure we only
-          create products that serve a purpose. We merge art, design, and
-          technology into exciting new solutions.
+          <span class="text" Language="eng">
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </span>
+          <span class="text" Language="br">
+            Cada projeto começa com uma pesquisa de marca detalhada para
+            garantir que criemos apenas produtos com propósito. Fundimos arte,
+            design e tecnologia em soluções empolgantes e inovadoras.
+          </span>
         </p>
       </div>
       <div class="qualities-item">
         <img src="/assets/home/desktop/illustration-resourceful.svg" alt="" />
-        <h2>RESOURCEFUL</h2>
+        <h2><span class="text" Language="eng">RESOURCEFUL</span></h2>
         <p>
-          Everything that we do has a strategic purpose. We use an agile
-          approach in all of our projects and value customer collaboration. It
-          guarantees superior results that fulfill our clients’ needs.
+          <span class="text" Language="eng">
+            Everything that we do has a strategic purpose. We use an agile
+            approach in all of our projects and value customer collaboration. It
+            guarantees superior results that fulfill our clients’ needs.
+          </span>
+          <span class="text" Language="br">
+            Tudo o que fazemos tem um propósito estratégico. Utilizamos uma
+            abordagem ágil em todos os nossos projetos e valorizamos a
+            colaboração com o cliente. Isso garante resultados superiores que
+            atendem às necessidades de nossos clientes.
+          </span>
         </p>
       </div>
       <div class="qualities-item">
         <img src="/assets/home/desktop/illustration-friendly.svg" alt="" />
-        <h2>FRIENDLY</h2>
+        <h2><span class="text" Language="eng">FRIENDLY</span></h2>
         <p>
-          We are a group of enthusiastic folks who know how to put people first.
-          Our success depends on our customers, and we strive to give them the
-          best experience a company can provide.
+          <span class="text" Language="eng">
+            We are a group of enthusiastic folks who know how to put people
+            first. Our success depends on our customers, and we strive to give
+            them the best experience a company can provide.
+          </span>
+          <span class="text" Language="br">
+            Somos um grupo de pessoas entusiasmadas que sabem como colocar as
+            pessoas em primeiro lugar. Nosso sucesso depende dos nossos clientes
+            e nos esforçamos para oferecer a eles a melhor experiência que uma
+            empresa pode proporcionar.
+          </span>
         </p>
       </div>
     </section>
@@ -101,13 +198,30 @@
     <footer>
       <div class="contact container">
         <div>
-          <h2>Let’s talk about your project</h2>
+          <h2>
+            <span class="text" Language="eng"
+              >Let’s talk about your project</span
+            >
+            <span class="text" Language="br"
+              >Vamos conversar sobre o seu projeto</span
+            >
+          </h2>
           <p>
-            Ready to take it to the next level? Contact us today and find out
-            how our expertise can help your business grow.
+            <span class="text" Language="eng">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </span>
+            <span class="text" Language="br">
+              Pronto para levar ao próximo nível? Entre em contato conosco hoje
+              mesmo e descubra como nossa expertise pode ajudar o crescimento do
+              seu negócio.
+            </span>
           </p>
         </div>
-        <a href="./src/contact.html" class="button">Get in touch</a>
+        <a href="./src/contact.html" class="button"
+          ><span class="text" Language="eng">Get in touch</span
+          ><span class="text" Language="br">Entre em contato</span></a
+        >
       </div>
       <div class="footer">
         <div class="footer-nav">
@@ -118,28 +232,61 @@
             />
           </div>
           <nav class="nav">
-            <a href="./src/about.html" class="nav-links">our company</a>
-            <a href="./src/locations.html" class="nav-links">Locations</a>
-            <a href="./src/contact.html" class="nav-links">contact</a>
+            <a href="./src/about.html" class="nav-links"
+              ><span class="text" Language="eng">our company</span
+              ><span class="text" Language="br">nossa empresa</span></a
+            >
+            <a href="./src/locations.html" class="nav-links"
+              ><span class="text" Language="eng">Locations</span
+              ><span class="text" Language="br">Filiais</span></a
+            >
+            <a href="./src/contact.html" class="nav-links"
+              ><span class="text" Language="eng">contact</span
+              ><span class="text" Language="br">contato</span></a
+            >
           </nav>
         </div>
         <div class="footer-bottom">
           <div>
-            Designo Central Office </br> 
-            3886 Wellington Street </br> 
-            Toronto, Ontario M9C 3J5
+            <span class="text" Language="eng">
+              Designo Central Office <br />
+              3886 Wellington Street <br />
+              Toronto, Ontario M9C 3J5
+            </span>
+            <span class="text" Language="br">
+              Escritório principal <br />
+              Rua Wellington 3886 <br />
+              Toronto, Ontario M9C 3J5
+            </span>
           </div>
           <div>
-            Contact Us (Central Office) </br> 
-            P : +1 253-863-8967 </br>
-            M : contact@designo.co
+            <span class="text" Language="eng">
+              Contact Us (Central Office) <br />
+              P : +1 253-863-8967 <br />
+              M : contact@designo.co
+            </span>
+            <span class="text" Language="br">
+              Entre em contato (Escritório principal) <br />
+              P : +1 253-863-8967 <br />
+              M : contact@designo.co
+            </span>
           </div>
           <div class="social-media">
-            <a href=""><img src="/assets/shared/desktop/icon-facebook.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-youtube.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-twitter.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""></a>
-            <a href=""><img src="/assets/shared/desktop/icon-instagram.svg" alt=""></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-facebook.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-youtube.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-twitter.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""
+            /></a>
+            <a href=""
+              ><img src="/assets/shared/desktop/icon-instagram.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>

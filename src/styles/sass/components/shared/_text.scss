@@ -1,0 +1,21 @@
+.text {
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.br {
+  .text[Language="eng"] {
+    display: none !important;
+  }
+}
+
+.eng {
+  .text[Language="br"] {
+    display: none !important;
+  }
+}

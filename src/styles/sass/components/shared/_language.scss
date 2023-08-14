@@ -1,0 +1,106 @@
+@import "../../abstract/variables";
+
+.nav-wrapper {
+  text-align: center;
+  font: $font-link;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+
+  .sl-nav {
+    display: inline;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      display: inline-block;
+    }
+    li {
+      cursor: pointer;
+      ul {
+        display: none;
+      }
+      &:hover {
+        ul {
+          position: absolute;
+          top: 29px;
+          right: -15px;
+          display: block;
+          background: #fff;
+          width: 200px;
+          padding-top: 0px;
+          z-index: 1;
+          border-radius: 5px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          li {
+            position: relative;
+            text-align: left;
+            background: transparent;
+            padding: 15px 15px;
+            padding-bottom: 0;
+            z-index: 2;
+            color: #3c3c3c;
+
+            &:last-of-type {
+              padding-bottom: 15px;
+            }
+            span {
+              padding-left: 5px;
+
+              &:hover,
+              &.active {
+                color: #146c78;
+              }
+            }
+          }
+        }
+        .triangle {
+          position: absolute;
+          top: 15px;
+          right: -10px;
+          z-index: 10;
+          height: 14px;
+          overflow: hidden;
+          width: 30px;
+          background: transparent;
+
+          &::after {
+            content: "";
+            display: block;
+            z-index: 20;
+            width: 15px;
+            transform: rotate(45deg) translateY(0px) translatex(10px);
+            height: 15px;
+            background: #fff;
+            border-radius: 2px 0px 0px 0px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+    .sl-flag {
+      display: inline-block;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+      width: 15px;
+      height: 15px;
+      background: #aaa;
+      border-radius: 50%;
+      position: relative;
+      top: 2px;
+      overflow: hidden;
+
+      background-size: cover;
+      background-position: center center;
+    }
+    .flag-br {
+      background-image: url("/assets/shared/desktop/brazil-.png");
+    }
+
+    .flag-usa {
+      background-image: url("/assets/shared/desktop/united-states.png");
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    font: $font-h3;
+  }
+}
