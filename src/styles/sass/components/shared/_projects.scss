@@ -1,4 +1,4 @@
-@import "../abstract/variables";
+@import "../../abstract/variables";
 
 .projects {
   display: grid;
@@ -61,22 +61,18 @@
   }
 
   @media ((max-width: $breakpoint-tablet) AND (min-width: $breakpoint-mobile)) {
-    & {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 
-      .project-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-        .text-container {
-          justify-content: center;
-        }
+      .text-container {
+        justify-content: center;
       }
     }
   }
   @media (max-width: $breakpoint-mobile) {
-    & {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
   }
 }

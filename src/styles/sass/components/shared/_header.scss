@@ -1,4 +1,4 @@
-@import "../abstract/variables";
+@import "../../abstract/variables";
 
 .header {
   padding: 4rem 0;
@@ -36,7 +36,7 @@
     .links-container {
       display: flex;
       align-items: center;
-      gap: 2.625rem;
+      gap: 1rem;
       .nav-links {
         font: $font-link;
         letter-spacing: +2px;
@@ -53,12 +53,10 @@
           transition: width 0.5s;
         }
 
-        &:hover {
-          &::after {
-            content: "";
-            background-color: $light-grey;
-            width: 100%;
-          }
+        &:hover::after {
+          content: "";
+          background-color: $light-grey;
+          width: 100%;
         }
       }
     }

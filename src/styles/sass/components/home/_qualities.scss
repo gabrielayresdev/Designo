@@ -1,4 +1,4 @@
-@import "../abstract/variables";
+@import "../../abstract/variables";
 
 .qualities {
   margin-top: 10rem;
@@ -31,31 +31,27 @@
   }
 
   @media ((max-width: $breakpoint-tablet)) AND (min-width: $breakpoint-mobile) {
-    & {
-      flex-direction: column;
-      gap: 2rem;
+    flex-direction: column;
+    gap: 2rem;
 
-      .qualities-item {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto 1fr;
-        row-gap: 1rem;
-        column-gap: 3rem;
+    .qualities-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr;
+      row-gap: 1rem;
+      column-gap: 3rem;
 
-        img {
-          grid-row: span 2;
-        }
-        p {
-          text-align: left;
-          max-width: 46ch;
-        }
+      img {
+        grid-row: span 2;
+      }
+      p {
+        text-align: left;
+        max-width: 46ch;
       }
     }
   }
   @media (max-width: $breakpoint-mobile) {
-    & {
-      flex-direction: column;
-      gap: 5rem;
-    }
+    flex-direction: column;
+    gap: 5rem;
   }
 }

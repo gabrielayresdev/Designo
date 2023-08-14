@@ -1,4 +1,4 @@
-@import "../abstract/variables";
+@import "../../abstract/variables";
 
 .main {
   display: flex;
@@ -68,24 +68,22 @@
   }
 
   @media (max-width: $breakpoint-tablet) {
-    & {
-      flex-direction: column;
-      align-items: center;
-      padding: 5rem 1.5rem 0 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1.5rem 0 1.5rem;
 
-      .text-container {
-        align-items: center;
-        .title {
-          text-align: center;
-          max-width: 100%;
-          font: 500 2rem/2.25rem "Jost", sans-serif;
-        }
-        p {
-          text-align: center;
-        }
-        .button {
-          align-self: center;
-        }
+    .text-container {
+      align-items: center;
+      .title {
+        text-align: center;
+        max-width: 100%;
+        font: 500 2rem/2.25rem "Jost", sans-serif;
+      }
+      p {
+        text-align: center;
+      }
+      .button {
+        align-self: center;
       }
     }
   }

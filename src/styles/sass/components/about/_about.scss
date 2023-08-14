@@ -1,7 +1,8 @@
-@import "../abstract/variables";
+@import "../../abstract/variables";
 
 .about-card {
   display: flex;
+  gap: 1rem;
   &.peach {
     background-color: $peach;
   }
@@ -68,53 +69,49 @@
   }
 
   @media (max-width: $breakpoint-tablet) {
-    & {
-      display: grid;
-      grid-template-rows: 1fr auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
 
-      .img-container {
-        grid-row: 1;
+    .img-container {
+      grid-row: 1;
 
-        overflow: hidden;
+      overflow: hidden;
 
-        img {
-          object-position: 0 50%;
-          object-fit: cover;
-          max-height: 20rem;
-          width: 100%;
-        }
+      img {
+        object-position: 0 50%;
+        object-fit: cover;
+        max-height: 20rem;
+        width: 100%;
       }
+    }
 
-      .text-container {
-        padding: 4.25rem 3.6rem;
-        margin: 0;
-        text-align: center;
+    .text-container {
+      padding: 4.25rem 3.6rem;
+      margin: 0;
+      text-align: center;
 
-        p {
-          max-width: 100%;
-        }
+      p {
+        max-width: 100%;
       }
     }
   }
   @media (max-width: $breakpoint-mobile) {
-    & {
-      width: 100%;
-      border-radius: 0;
+    width: 100%;
+    border-radius: 0;
 
-      &:first-of-type {
-        margin-bottom: 0;
-      }
+    &:first-of-type {
+      margin-bottom: 0;
+    }
 
-      .img-container {
-        img {
-          object-position: bottom;
-        }
+    .img-container {
+      img {
+        object-position: bottom;
       }
+    }
 
-      .text-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
+    .text-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
 }

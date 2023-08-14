@@ -1,4 +1,4 @@
-@import "../abstract/variables";
+@import "../../abstract/variables";
 
 footer {
   .contact {
@@ -20,7 +20,7 @@ footer {
     z-index: 4;
     color: $white;
 
-    h2 {
+    .title {
       font: $font-h2;
       max-width: 13ch;
       margin-bottom: 1rem;
@@ -96,12 +96,10 @@ footer {
             transition: width 0.5s;
           }
 
-          &:hover {
-            &::after {
-              content: "";
-              background-color: $light-grey;
-              width: 100%;
-            }
+          &:hover::after {
+            content: "";
+            background-color: $light-grey;
+            width: 100%;
           }
         }
       }
@@ -133,9 +131,7 @@ footer {
       }
 
       @media (max-width: $breakpoint-tablet) {
-        & {
-          grid-template-columns: repeat(3, auto);
-        }
+        grid-template-columns: repeat(3, auto);
       }
     }
   }
