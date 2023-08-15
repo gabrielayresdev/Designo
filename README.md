@@ -2,7 +2,7 @@
 
 ## Sobre
 
-O projeto consiste em um website desenvolvido para uma empresa de design fictícia. O website possui sete páginas responsivas, sendo elas uma homepage, três páginas exibindo os vários projetos da empresa, uma página sobre a companhia, uma página com mapas para as filais da organização e uma página para contato. Os mapas utilizados no site utilizam a biblioteca leaflet. Além disso, o site está disponível em 2 idiomas: inglês e português.
+O site é composto por sete páginas responsivas: uma página inicial, três páginas de destaque de projetos, uma página de visão geral da empresa, uma página contendo mapas interativos das filiais usando a biblioteca Leaflet e uma página de contato. Ele é acessível em inglês e português.
 
 Caso queira utilizar o site, entre em https://designo-gabrielayres.netlify.app
 
@@ -24,7 +24,7 @@ Essas foram as tecnologias usadas no projeto:
 As principais funcionalidades são:
 
 - Navegação entre as sete páginas
-- Elementos reativos e animações fluidas
+- Elementos reativos e animações fluídas
 - Mudança de idioma entre inglês e português
 - Mapas interativos
 
