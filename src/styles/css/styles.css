@@ -179,7 +179,7 @@ table {
 @media (max-width: 768px) {
   .header {
     padding: 2rem 0;
-    width: 100vw;
+    width: 100%;
     padding: 4rem 11.5vw;
   }
 }
@@ -1096,7 +1096,7 @@ footer .footer .footer-bottom .social-media a:hover {
 }
 
 .detail {
-  width: 100vw;
+  width: 100%;
   height: 0;
   position: absolute;
   z-index: -1;
