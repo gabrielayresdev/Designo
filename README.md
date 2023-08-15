@@ -6,7 +6,7 @@ O projeto consiste em um website desenvolvido para uma empresa de design fictíc
 
 Caso queira utilizar o site, entre em https://designo-gabrielayres.netlify.app
 
-![Site responsivo. Design adaptável para todas as plataformas](https://github.com/INeonysI/Pokedex/blob/ea8e18337245c7e23407a9b8ebe05e4b90176294/Assets/responsive.png)
+![Site responsivo. Design adaptável para todas as plataformas](https://github.com/gabrielayresdev/Designo/blob/eb70ac40c8b05df871a1ec6ebe70cda66d985458/assets/readme/designo-template.png)
 
 Para ver o layout completo da página, acesse https://bit.ly/3YwU3gV
 
@@ -38,15 +38,15 @@ As principais funcionalidades são:
 
 ### Desktop
 
-![Layout da homepage desktop](https://github.com/INeonysI/Pokedex/blob/ea8e18337245c7e23407a9b8ebe05e4b90176294/Assets/responsive.png)
+![Layout da homepage desktop](https://github.com/gabrielayresdev/Designo/blob/eb70ac40c8b05df871a1ec6ebe70cda66d985458/assets/readme/Designo-Home.png)
 
 ### Tablet
 
-![Layout da homepage no tablet](https://github.com/INeonysI/Pokedex/blob/ea8e18337245c7e23407a9b8ebe05e4b90176294/Assets/responsive.png)
+![Layout da homepage no tablet](<https://github.com/gabrielayresdev/Designo/blob/eb70ac40c8b05df871a1ec6ebe70cda66d985458/assets/readme/Designo-Home%20(tablet).png>)
 
 ### Mobile
 
-![Layout da homepage mobile](https://github.com/INeonysI/Pokedex/blob/ea8e18337245c7e23407a9b8ebe05e4b90176294/Assets/responsive.png)
+![Layout da homepage mobile](<https://github.com/gabrielayresdev/Designo/blob/eb70ac40c8b05df871a1ec6ebe70cda66d985458/assets/readme/Designo-Home%20(mobile).png>)
 
 ## Links
 
