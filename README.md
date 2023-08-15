@@ -31,7 +31,7 @@ As principais funcionalidades são:
 ## Instalação
 
 ```bash
-    npm clone https://github.com/gabrielayresdev/Designo.git
+    git clone https://github.com/gabrielayresdev/Designo.git
 ```
 
 ## Layout
