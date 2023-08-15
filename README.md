@@ -2,7 +2,7 @@
 
 ## Sobre
 
-O site é composto por sete páginas responsivas: uma página inicial, três páginas de destaque de projetos, uma página de visão geral da empresa, uma página contendo mapas interativos das filiais usando a biblioteca Leaflet e uma página de contato. Ele é acessível em inglês e português.
+O projeto consiste em um website desenvolvido para uma empresa de design fictícia. O website é composto por sete páginas responsivas: uma página inicial, três páginas de destaque de projetos, uma página de visão geral da empresa, uma página contendo mapas interativos das filiais usando a biblioteca Leaflet e uma página de contato. Ele é acessível em inglês e português.
 
 Caso queira utilizar o site, entre em https://designo-gabrielayres.netlify.app
 
