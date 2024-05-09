@@ -6,32 +6,32 @@ export default function translate() {
     let ls = localStorage.getItem("lang");
     let actual = ls ? ls : "eng";
 
+    // Remove idioma atual do body e adiciona o salvo no localStorage
     body.classList.forEach((item) => body.classList.remove(item));
     body.classList.add(actual);
-    localStorage.setItem("lang", actual);
-
-    languages.forEach((item) => {
-      item.querySelector("span").classList.remove("active");
-    });
-    document
-      .querySelector(`[data-lang=${actual}]`)
-      .querySelector("span")
-      .classList.add("active");
   }
   changeLanguage();
 
   languages.forEach((item) => {
     item.addEventListener("click", ({ target }) => {
-      const selection = target.innerHTML;
+      const selection = item.dataset.lang;
+      console.log(item.dataset.lang)
 
       switch (selection) {
-        case "Português":
+        case "br":
           localStorage.setItem("lang", "br");
           break;
-        case "English":
+        case "eng":
           localStorage.setItem("lang", "eng");
           break;
       }
+
+      // Seleciona o idioma escolhido como active
+      languages.forEach((option) => {
+        option.querySelector(".option").classList.remove("active");
+      });
+      item.querySelector(".option").classList.add("active")
+
 
       changeLanguage();
     });
