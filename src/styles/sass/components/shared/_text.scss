@@ -9,13 +9,13 @@
 }
 
 .br {
-  .text[Language="eng"] {
+  [Language="eng"] {
     display: none !important;
   }
 }
 
 .eng {
-  .text[Language="br"] {
+  [Language="br"] {
     display: none !important;
   }
 }

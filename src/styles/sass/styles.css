@@ -1,0 +1,1359 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  color: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 77%;
+  margin: 0 auto;
+}
+
+.row-2 {
+  grid-row: span 2;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 89%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 87%;
+  }
+}
+.header {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 0;
+    width: 100%;
+    padding: 4rem 11.5vw;
+  }
+}
+.header .logo-container img {
+  max-height: 27px;
+}
+.header [data-dropdown=burger],
+.header [data-dropdown=close] {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header [data-dropdown=burger].active,
+  .header [data-dropdown=close].active {
+    display: block;
+  }
+}
+.header .nav .links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .nav .links-container .nav-links {
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.header .nav .links-container .nav-links::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 2px;
+  transition: width 0.5s;
+}
+.header .nav .links-container .nav-links:hover::after {
+  content: "";
+  background-color: rgb(241, 243, 245);
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .header .nav {
+    padding: 4rem 5.5vw;
+  }
+  .header .nav .links-container .nav-links {
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .header .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    animation: openDropdown 0.4s forwards;
+    overflow: hidden;
+    display: none;
+  }
+  .header .nav .links-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: rgb(29, 28, 30);
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  .header .nav .links-container .nav-links {
+    font: 500 1.25rem/1.625rem "Jost", sans-serif;
+    letter-spacing: 2px;
+    background-color: rgb(29, 28, 30);
+    padding: 0;
+  }
+  .header .nav.active {
+    display: flex;
+  }
+}
+
+@keyframes openDropdown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100vh;
+  }
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 95px 110px 0 95px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+}
+.main .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main .text-container .title {
+  font: 500 3rem/3rem "Jost", sans-serif;
+  max-width: 20ch;
+}
+.main .text-container .description {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 46ch;
+}
+.main .text-container .button {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  align-self: flex-start;
+  color: rgb(29, 28, 30);
+  padding: 18px 25px;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main .text-container .button:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
+.main .phone-image-container {
+  width: 284px;
+  height: 573px;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  top: 4rem;
+  overflow: hidden;
+  background-image: url("/assets/home/desktop/image-hero-phone.png");
+  background-position: center;
+}
+@media (max-width: 1280px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1.5rem 0 1.5rem;
+  }
+  .main .text-container {
+    align-items: center;
+  }
+  .main .text-container .title {
+    text-align: center;
+    max-width: 100%;
+    font: 500 2rem/2.25rem "Jost", sans-serif;
+  }
+  .main .text-container p {
+    text-align: center;
+  }
+  .main .text-container .button {
+    align-self: center;
+  }
+}
+
+.expertises {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 24px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.expertises #webdesign {
+  background-image: url("/assets/home/desktop/image-web-design-large.jpg");
+}
+.expertises #appdesign {
+  background-image: url("/assets/home/desktop/image-app-design.jpg");
+}
+.expertises #graphicdesign {
+  background-image: url("/assets/home/desktop/image-graphic-design.jpg");
+}
+.expertises .expertise {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+}
+.expertises .expertise::after {
+  transition: all 0.4s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(231, 129, 107);
+  opacity: 0;
+  z-index: 2;
+  border-radius: 15px;
+}
+.expertises .expertise:hover::after {
+  opacity: 0.7;
+}
+.expertises .expertise:hover p::after {
+  transform: rotate(360deg);
+  transition: all 0.4s;
+}
+.expertises .expertise h2 {
+  font: 500 2.5rem/3rem "Jost", sans-serif;
+  letter-spacing: 2px;
+  z-index: 4;
+  text-align: center;
+}
+.expertises .expertise p {
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.expertises .expertise p::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("/assets/shared/desktop/icon-right-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+@media (max-width: 1280px) {
+  .expertises {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.qualities {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.qualities .qualities-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.qualities .qualities-item img {
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-position: center;
+  background-size: cover;
+}
+.qualities .qualities-item h2 {
+  font: 500 1.25rem/1.625rem "Jost", sans-serif;
+  letter-spacing: 5px;
+}
+.qualities .qualities-item p {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  text-align: center;
+  max-width: 36ch;
+}
+@media ((max-width: 1280px)) and (min-width: 768px) {
+  .qualities {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .qualities .qualities-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .qualities .qualities-item img {
+    grid-row: span 2;
+  }
+  .qualities .qualities-item p {
+    text-align: left;
+    max-width: 46ch;
+  }
+}
+@media (max-width: 768px) {
+  .qualities {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 72px 95px;
+  position: relative;
+  bottom: -72px;
+  background-color: rgb(231, 129, 107);
+  border-radius: 15px;
+  background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 4;
+  color: rgb(255, 255, 255);
+}
+footer .contact h2 {
+  font: 500 2.5rem/3rem "Jost", sans-serif;
+  max-width: 13ch;
+  margin-bottom: 1rem;
+}
+footer .contact p {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 48ch;
+}
+footer .contact .button {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(29, 28, 30);
+  padding: 18px 25px;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+footer .contact .button:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
+footer .footer {
+  padding: 0 11.5vw;
+  background-color: rgb(29, 28, 30);
+}
+footer .footer .footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  padding: 8rem 0 2rem 0;
+  border-bottom: 1px solid rgb(51, 49, 54);
+}
+footer .footer .footer-nav .logo-container img {
+  max-height: 27px;
+}
+footer .footer .footer-nav .nav {
+  display: flex;
+  align-items: center;
+  gap: 2.625rem;
+}
+footer .footer .footer-nav .nav .hamburguer {
+  display: none;
+}
+footer .footer .footer-nav .nav .nav-links {
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+}
+footer .footer .footer-nav .nav .nav-links::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 2px;
+  transition: width 0.5s;
+}
+footer .footer .footer-nav .nav .nav-links:hover::after {
+  content: "";
+  background-color: rgb(241, 243, 245);
+  width: 100%;
+}
+footer .footer .footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  margin-top: 2rem;
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  color: rgb(255, 255, 255);
+}
+footer .footer .footer-bottom .social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+footer .footer .footer-bottom .social-media a {
+  cursor: pointer;
+}
+footer .footer .footer-bottom .social-media a:hover {
+  filter: contrast(120%);
+}
+@media (max-width: 1280px) {
+  footer .footer .footer-bottom {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-width: 768px) {
+  footer .contact {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+  footer .contact h2 {
+    max-width: 11ch;
+    margin: 0 auto 1rem;
+  }
+  footer .contact p {
+    max-width: 32ch;
+  }
+  footer .footer .footer-nav {
+    flex-direction: column;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  footer .footer .footer-nav .logo-container {
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(51, 49, 54);
+  }
+  footer .footer .footer-nav .nav {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .footer .footer-nav .nav .nav-links {
+    padding: 0;
+  }
+  footer .footer .footer-bottom {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  footer .footer .footer-bottom .social-media {
+    justify-self: center;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.projects .project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects .project-card .image-container {
+  width: 100%;
+}
+.projects .project-card .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.projects .project-card:hover .text-container {
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+}
+.projects .project-card:hover .text-container h2 {
+  color: rgb(255, 255, 255);
+  transition: all 0.4s;
+}
+.projects .project-card .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-grow: 1;
+  background-color: #fdf3f0;
+  color: rgb(29, 28, 30);
+  transition: all 0.4s;
+}
+.projects .project-card .text-container h2 {
+  font: 500 1.25rem/1.625rem "Jost", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(231, 129, 107);
+}
+.projects .project-card .text-container p {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 26ch;
+  text-align: center;
+}
+@media ((max-width: 1280px) and (min-width: 768px)) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .projects .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects .project-card .text-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 10rem;
+  border-radius: 15px;
+  /* To rotate the background, it need this to settings */
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.about-card.peach {
+  background-color: rgb(231, 129, 107);
+}
+.about-card.lightPeach {
+  background-color: rgb(255, 173, 155);
+}
+.about-card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.about-card.bg-1::before {
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-repeat: no-repeat;
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+.about-card.bg-2::before {
+  background-image: url("/assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+.about-card.bg-3::before {
+  background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+.about-card .text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+.about-card .text-container .title {
+  font: 500 3rem/3rem "Jost", sans-serif;
+  margin-bottom: 2rem;
+}
+.about-card .text-container p {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 48ch;
+  margin-bottom: 1.5rem;
+  z-index: 20;
+}
+@media (max-width: 1280px) {
+  .about-card {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .about-card .img-container {
+    grid-row: 1;
+    overflow: hidden;
+  }
+  .about-card .img-container img {
+    -o-object-position: 0 50%;
+       object-position: 0 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 20rem;
+    width: 100%;
+  }
+  .about-card .text-container {
+    padding: 4.25rem 3.6rem;
+    margin: 0;
+    text-align: center;
+  }
+  .about-card .text-container p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about-card {
+    width: 100%;
+    border-radius: 0;
+  }
+  .about-card:first-of-type {
+    margin-bottom: 0;
+  }
+  .about-card .img-container img {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .about-card .text-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.branches {
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.branches .branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.branches .branch img {
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-position: center;
+  background-size: cover;
+}
+.branches .branch h2 {
+  font: 500 1.25rem/1.625rem "Jost", sans-serif;
+  letter-spacing: 5px;
+}
+.branches .branch a {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(231, 129, 107);
+  color: rgb(255, 255, 255);
+  padding: 18px 25px;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.branches .branch a:hover {
+  background-color: rgb(255, 173, 155);
+}
+@media ((max-width: 1280px)) and (min-width: 768px) {
+  .branches {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .branches .qualities-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  .branches .qualities-item img {
+    grid-row: span 2;
+  }
+}
+@media (max-width: 768px) {
+  .branches {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(231, 129, 107);
+  margin-bottom: 10rem;
+  border-radius: 15px;
+  /* To rotate the background, it need this to settings */
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: 3.5rem 6rem;
+}
+.contact-form::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-repeat: no-repeat;
+  transform: rotate3d(1, 0, 0, 180deg);
+  position: absolute;
+  z-index: -1;
+}
+.contact-form .text-container {
+  color: rgb(255, 255, 255);
+}
+.contact-form .text-container .title {
+  font: 500 3rem/3rem "Jost", sans-serif;
+  margin-bottom: 2rem;
+}
+.contact-form .text-container p {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 47ch;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-form form .input {
+  position: relative;
+  width: 100%;
+}
+.contact-form form .input input,
+.contact-form form .input textarea {
+  border: none;
+  border-bottom: 1px solid rgb(241, 243, 245);
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 0.25rem;
+  box-shadow: inset 0 -2px transparent;
+  transition: all 0.3s;
+}
+.contact-form form .input input:focus,
+.contact-form form .input textarea:focus {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  box-shadow: inset 0 -2px rgb(255, 255, 255);
+}
+.contact-form form .input input:not(:-moz-placeholder-shown) ~ label, .contact-form form .input textarea:not(:-moz-placeholder-shown) ~ label {
+  display: none;
+}
+.contact-form form .input input:focus ~ label, .contact-form form .input input:not(:placeholder-shown) ~ label,
+.contact-form form .input textarea:focus ~ label,
+.contact-form form .input textarea:not(:placeholder-shown) ~ label {
+  display: none;
+}
+.contact-form form .input textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 300px;
+}
+.contact-form form .input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  padding: 0.25rem;
+  color: rgb(255, 255, 255);
+  cursor: text;
+}
+.contact-form form button {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  align-self: flex-end;
+  padding: 18px 25px;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contact-form form button:hover {
+  background-color: rgb(255, 173, 155);
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1280px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+    padding: 3.5rem;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    border-radius: 0;
+    padding: 1.5rem;
+  }
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.maps .map-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.maps .map-row .map {
+  height: 400px;
+  width: 100%;
+  outline: none;
+  z-index: 0;
+}
+.maps .map-row .address {
+  background-color: #fdf3f0;
+  background-image: url("../../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  border-radius: 15px;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
+.maps .map-row .address .title {
+  display: block;
+  font: 500 2.5rem/3rem "Jost", sans-serif;
+  margin-bottom: 1.5rem;
+  color: rgb(231, 129, 107);
+}
+.maps .map-row .address .text-container p {
+  display: inline-block;
+  margin-right: 2rem;
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+}
+.maps .map-row .address .text-container p span {
+  display: block;
+  font-weight: bold;
+}
+@media (max-width: 1280px) {
+  .maps .map-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 2rem;
+  }
+  .maps .map-row .map {
+    grid-row: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .maps {
+    width: 100vw;
+  }
+  .maps .map-row {
+    gap: 0;
+  }
+  .maps .map-row .address {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+  .maps .map-row .address .title {
+    margin: 0;
+    display: block;
+  }
+  .maps .map-row .address .text-container p {
+    margin: 0;
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
+
+.outdoor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: rgb(231, 129, 107);
+  position: relative;
+  border-radius: 15px;
+  background-image: url("/assets/app-design/desktop/bg-pattern-intro-app.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 0% 50%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10rem;
+  padding: 4rem;
+}
+.outdoor h2 {
+  font: 500 3rem/3rem "Jost", sans-serif;
+}
+.outdoor p {
+  font: 400 1rem/1.625rem "Jost", sans-serif;
+  max-width: 37ch;
+}
+@media (max-width: 768px) {
+  .outdoor {
+    width: 100vw;
+    border-radius: 0;
+    padding: 6.5rem 1.5rem;
+    background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+    background-size: contain;
+    background-position: 100%;
+  }
+}
+
+.detail {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+}
+.detail::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 594px;
+  top: -50%;
+  background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+.detail.rotate::after {
+  transform: rotateX(180deg) rotateY(180deg);
+  right: 0;
+  top: -50%;
+  opacity: 0.8;
+}
+
+.language-selector {
+  position: relative;
+  cursor: pointer;
+}
+.language-selector .language-display .text {
+  text-align: center;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+.language-selector .language-display .bold {
+  display: inline-block;
+  font-weight: 700;
+}
+.language-selector .language-options {
+  display: none;
+  cursor: pointer;
+}
+.language-selector .language-options .triangle {
+  position: absolute;
+  bottom: 100%;
+  height: 15px;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+.language-selector .language-options .triangle::after {
+  content: "";
+  display: block;
+  z-index: 20;
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: 25px;
+  transform: rotate(45deg) translateY(0px) translatex(10px);
+  background: #ffffff;
+  border-radius: 2px 0px 0px 0px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.language-selector .language-options .lang-item {
+  padding: 0.5rem 1rem;
+}
+.language-selector .language-options .lang-item .option {
+  padding-left: 5px;
+  display: inline-block;
+  font: 400 0.875rem/0.875rem "Jost", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.language-selector .language-options .lang-item .option:hover, .language-selector .language-options .lang-item .option.active {
+  color: #146c78;
+}
+.language-selector:hover .language-options {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translateX(-50%);
+  display: block;
+  background: #fff;
+  width: 200px;
+  padding-top: 0px;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.language-selector .sl-flag {
+  display: inline-block;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  width: 15px;
+  height: 15px;
+  background: #aaa;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+.language-selector .flag-br {
+  background-image: url("/assets/shared/desktop/brazil-.png");
+}
+.language-selector .flag-usa {
+  background-image: url("/assets/shared/desktop/united-states.png");
+}
+@media (max-width: 1280px) {
+  .language-selector .language-display .text {
+    display: none;
+  }
+  .language-selector .language-options .triangle {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .language-selector {
+    font: 500 1.25rem/1.625rem "Jost", sans-serif;
+  }
+}
+
+/* 
+.nav-wrapper {
+  text-align: center;
+  font: $font-link;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+
+  .sl-nav {
+    display: inline;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      display: inline-block;
+    }
+    li {
+      cursor: pointer;
+      ul {
+        display: none;
+      }
+      &:hover {
+        ul {
+          position: absolute;
+          top: 29px;
+          right: -15px;
+          display: block;
+          background: #fff;
+          width: 200px;
+          padding-top: 0px;
+          z-index: 1;
+          border-radius: 5px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          li {
+            position: relative;
+            text-align: left;
+            background: transparent;
+            padding: 15px 15px;
+            padding-bottom: 0;
+            z-index: 2;
+            color: #3c3c3c;
+
+            &:last-of-type {
+              padding-bottom: 15px;
+            }
+            span {
+              padding-left: 5px;
+
+              &:hover,
+              &.active {
+                color: #146c78;
+              }
+            }
+          }
+        }
+        .triangle {
+          position: absolute;
+          top: 15px;
+          right: -10px;
+          z-index: 10;
+          height: 14px;
+          overflow: hidden;
+          width: 30px;
+          background: transparent;
+
+          &::after {
+            content: "";
+            display: block;
+            z-index: 20;
+            width: 15px;
+            transform: rotate(45deg) translateY(0px) translatex(10px);
+            height: 15px;
+            background: #fff;
+            border-radius: 2px 0px 0px 0px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+    .sl-flag {
+      display: inline-block;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+      width: 15px;
+      height: 15px;
+      background: #aaa;
+      border-radius: 50%;
+      position: relative;
+      top: 2px;
+      overflow: hidden;
+
+      background-size: cover;
+      background-position: center center;
+    }
+    .flag-br {
+      background-image: url("/assets/shared/desktop/brazil-.png");
+    }
+
+    .flag-usa {
+      background-image: url("/assets/shared/desktop/united-states.png");
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    font: $font-h3;
+  }
+}
+ */
+.text {
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.br [Language=eng] {
+  display: none !important;
+}
+
+.eng [Language=br] {
+  display: none !important;
+}/*# sourceMappingURL=styles.css.map */

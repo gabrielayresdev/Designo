@@ -25,18 +25,6 @@
     display: none;
     cursor: pointer;
 
-    /* position: absolute;
-    left: 50%;
-    top: calc(100% + 15px);
-    transform: translateX(-50%);
-    display: block;
-    background: #fff;
-    width: 200px;
-    padding-top: 0px;
-    z-index: 1;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
-
     .triangle {
       position: absolute;
       bottom: calc(100%);
@@ -77,27 +65,6 @@
           color: #146c78;
         }
       }
-      .sl-flag {
-        display: inline-block;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-        width: 15px;
-        height: 15px;
-        background: #aaa;
-        border-radius: 50%;
-        position: relative;
-        top: 2px;
-        overflow: hidden;
-
-        background-size: cover;
-        background-position: center center;
-      }
-      .flag-br {
-        background-image: url("/assets/shared/desktop/brazil-.png");
-      }
-
-      .flag-usa {
-        background-image: url("/assets/shared/desktop/united-states.png");
-      }
     }
   }
   &:hover {
@@ -115,8 +82,47 @@
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     }
   }
-}
 
+  .sl-flag {
+    display: inline-block;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    width: 15px;
+    height: 15px;
+    background: #aaa;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center center;
+  }
+  .flag-br {
+    background-image: url("/assets/shared/desktop/brazil-.png");
+  }
+
+  .flag-usa {
+    background-image: url("/assets/shared/desktop/united-states.png");
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    .language-display {
+      .text {
+        display: none;
+      }
+    }
+
+    .language-options {
+      .triangle {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    font: $font-h3;
+  }
+}
+/* 
 .nav-wrapper {
   text-align: center;
   font: $font-link;
@@ -221,3 +227,4 @@
     font: $font-h3;
   }
 }
+ */
